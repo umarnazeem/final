@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: 'Times New Roman', Times, serif;
+}
+.hero{
+    width: 100%;
+    height: fit-content;
+    background-image: url(IMAGES/bg.jpg);
+    background-position-x: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    
+}
+ /*Navigation bar begins*/
+nav{       /*Navigation bar decoration*/
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+   /*background-image: linear-gradient(45deg, #93A5CF, #E4EfE9);*/
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    
+}
+.Logo{
+    width: 250px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    font-weight: 800;
+    font-size: 25px;
+    border-radius: 25px;
+    border-left: 0cap;
+    padding: 10px;
+}
+.hero> nav ul li a:hover {
+    background: rgb(105,213,210);
+    background: white;
+    
+    border-top-left-radius: 0%;
+    color: rgb(21, 21, 211);
+    transition: 1s all ease; 
+      }
+      /*Navigation bar ends*/
+
+ /*body content*/
+
+ 
+ .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+
+ .flex-container h1{
+    margin-top: 10%;
+    font-size: 50px;
+    color: hsl(242, 84%, 17%);  
+ }
+ .flex-container p{
+    margin: 10px 0 30px;
+    color: rgb(9, 6, 6);
+    font-size: 20px;
+    animation-delay: 0.5s;
+    
+ }
+.flex-container> img{
+    width: 600px;
+    min-height: fit-content;
+    float:right;
+    animation-delay: 1s;
+    
+    
+    
+     
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service{
+    display: flex;
+    background-color: rgb(215, 220, 226); 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: fit-content;
+}
+.service > div {
+    margin: 5%;
+    padding: 20px;
+    margin-left:0;
+    
+  }
+  .service div> img{
+    width: 500px;
+  }
+  .data{
+    font-size: 3cap;
+    margin-left: 4%;
+  }
+  .data h2{
+    text-align:center;
+    
+  }
+
+  .data p> img{
+    float: right;
+  }
+  .data.p2 img{
+    float: left;
+  }
+.list2{
+  margin-left: 40%;
+  
+}
+.photo{
+  display: flex;
+  
+  
+
+}
+.photo> img{
+  width: 100%;
+  
+
+}
